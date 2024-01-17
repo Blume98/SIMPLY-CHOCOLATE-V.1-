@@ -3,40 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Simply Chokolate</title>
   </head>
   <body>
     <div>
-      <header>
-        <a href="./index.html"
-          >SIMPLY CHOCOLATE<img
-            src="./images/chocolate_icon.svg"
-            alt="chocolate_icon"
-        /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Inst</a></li>
-          <li><a href="">FB</a></li>
-          <li><a href="">Twit</a></li>
+      <header class="header">
+        <nav class="nav-header">
+          <a href="./index.html" class="logo"
+            ><span class="logo-italic">SIMPLY</span> CHOCOLATE<img
+              class="logo-header"
+              src="./images/chocolate_icon.svg"
+              alt="chocolate_icon"
+          /></a>
+          <ul class="menu-header-list">
+            <li class="menu-header-item">
+              <a class="menu-header-link" href="">Home</a>
+            </li>
+            <li class="menu-header-item">
+              <a class="menu-header-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="menu-header-item">
+              <a class="menu-header-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="soc-header-list">
+          <li class="soc-header-item">
+            <a
+              class="soc-header-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Inst</a
+            >
+          </li>
+          <li class="soc-header-item">
+            <a
+              class="soc-header-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >FB</a
+            >
+          </li>
+          <li class="soc-header-item">
+            <a
+              class="soc-header-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twit</a
+            >
+          </li>
         </ul>
       </header>
       <main>
         <section>
-          <h1>
+          <h1 class="title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button type="button">Buy now</button>
-          <a href="#made">How it’s made</a>
-          <a href="">scroll down</a>
+          <button class="button-buy" type="button">Buy now</button>
+          <a class="link-nav" href="#made">How it’s made</a>
+          <a class="link-down" href="">scroll down</a>
         </section>
         <section>
-          <ul>
-            <li>
+          <ul class="description-list">
+            <li class="description-item">
               <h2>Unsurpassed taste</h2>
               <p>
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -45,7 +86,7 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="description-item">
               <h2>Affordable price</h2>
               <p>
                 Indulge in high-quality chocolate without breaking the bank with
@@ -55,7 +96,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="description-item">
               <h2>Own production</h2>
               <p>
                 We take pride in our own production process, ensuring that every
@@ -142,7 +183,12 @@
         </section>
         <section id="made">
           <h2>hOW IT’S made?</h2>
-          <img src="./images/Made/imagemade.jpg" alt="liquid chocolate" />
+          <img
+            src="./images/Made/imagemade.jpg"
+            alt="liquid chocolate"
+            width="600"
+            height="400"
+          />
           <h3>
             Try our chocolates today and discover the perfect balance of flavor
           </h3>
@@ -173,6 +219,8 @@
               <img
                 src="./images/PRODUCTS/img-1PRODUCTS-min.png"
                 alt="Dark chocolate"
+                width="230"
+                height="201"
               />
               <h3>orange</h3>
               <p>Dark chocolate</p>
@@ -182,6 +230,8 @@
               <img
                 src="./images/PRODUCTS/img-2PRODUCTS-min.png"
                 alt="Milk chocolate"
+                width="230"
+                height="201"
               />
               <h3>APPLE&CRANBERRY</h3>
               <p>Milk chocolate</p>
@@ -191,6 +241,8 @@
               <img
                 src="./images/PRODUCTS/img-3PRODUCTS-min.png"
                 alt="Dark chocolate"
+                width="230"
+                height="201"
               />
               <h3>lime&sea salt</h3>
               <p>Dark chocolate</p>
@@ -200,6 +252,8 @@
               <img
                 src="./images/PRODUCTS/img-4PRODUCTS-min.png"
                 alt="Dark chocolate"
+                width="230"
+                height="201"
               />
               <h3>pineapple</h3>
               <p>Dark chocolate</p>
@@ -209,6 +263,8 @@
               <img
                 src="./images/PRODUCTS/img-5PRODUCTS-min.png"
                 alt="Milk chocolate"
+                width="230"
+                height="201"
               />
               <h3>Classic</h3>
               <p>Milk chocolate</p>
@@ -218,6 +274,8 @@
               <img
                 src="./images/PRODUCTS/img-6PRODUCTS-min.png"
                 alt="Milk chocolate"
+                width="230"
+                height="201"
               />
               <h3>honey</h3>
               <p>Milk chocolate</p>
@@ -227,6 +285,8 @@
               <img
                 src="./images/PRODUCTS/img-7PRODUCTS-min.png"
                 alt="Dark chocolate"
+                width="230"
+                height="201"
               />
               <h3>Roasted fruits</h3>
               <p>Dark chocolate</p>
@@ -236,6 +296,8 @@
               <img
                 src="./images/PRODUCTS/img-8PRODUCTS-min.png"
                 alt="White chocolate"
+                width="230"
+                height="201"
               />
               <h3>Classic</h3>
               <p>White chocolate</p>
@@ -248,14 +310,23 @@
           <img
             src="./images/Sellers/img-1Sellers.jpg"
             alt="CHOCOLATE WITH NUTS"
+            width="368"
+            height="464"
           />
           <h3>CHOCOLATE WITH NUTS</h3>
           <img
             src="./images/Sellers/img-2Sellers.jpg"
             alt="CHOCOLATE WITH FRUITS"
+            width="368"
+            height="464"
           />
           <h3>CHOCOLATE WITH FRUITS</h3>
-          <img src="./images/Sellers/img-3Sellers.jpg" alt="DARK CHOCOLATE" />
+          <img
+            src="./images/Sellers/img-3Sellers.jpg"
+            width="368"
+            height="464"
+            alt="DARK CHOCOLATE"
+          />
           <h3>DARK CHOCOLATE</h3>
         </section>
         <section>
@@ -304,9 +375,9 @@
         <h2>Chocolate a delicious cure for a bad day</h2>
         <p>Social networks</p>
         <ul>
-          <li><a href="">Inst</a></li>
-          <li><a href="">FB</a></li>
-          <li><a href="">Twit</a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer">Inst</a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer">FB</a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer">Twit</a></li>
         </ul>
         <p>Contact us</p>
         <address>
