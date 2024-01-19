@@ -7,6 +7,19 @@ a {
 ul {
   list-style: none;
 }
+.all-title {
+  color: #111;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.all-title span {
+  color: #fd9222;
+}
+
 /* -----------Header------------ */
 .logo {
   color: #111;
@@ -110,3 +123,195 @@ ul {
   letter-spacing: -0.02em;
 }
 /* ----------------------------- */
+/* -----------Taste---------- */
+.taste {
+}
+.title-taste {
+}
+.taste-text {
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+.taste-list {
+}
+.taste-item {
+}
+.taste-img {
+}
+.taste-subtitle {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+.black-text {
+  color: #111;
+}
+/* ----------------------------- */
+/* -----------Made---------- */
+.made {
+}
+.made-title {
+}
+.made-img {
+}
+.made-subtitle {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.32; /* 133.333% */
+}
+.made-list {
+}
+.made-item {
+  color: #111;
+  font-size: 14px;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+/* -----------Products---------- */
+.products {
+}
+.products-title {
+}
+.products-list {
+}
+.products-item {
+}
+.products-img {
+}
+.products-subtitle {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.32; /* 133.333% */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-text {
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: -0.02em;
+}
+.products-btn {
+  color: #111;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/* ----------------------------- */
+/* -----------Sellers---------- */
+.sellers {
+}
+.sellers-title {
+}
+.sellers-img {
+}
+.sellers-subtitle {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.32; /* 133.333% */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/* ----------------------------- */
+/* -----------Loved---------- */
+.loved {
+}
+.loved-title {
+}
+.loved-list {
+}
+.loved-item {
+}
+.loved-img {
+}
+.loved-name {
+  color: #111;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.32; /* 133.333% */
+}
+.loved-text {
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+.loved-btn {
+  color: #111;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/* ----------------------------- */
+/* -----------Loved---------- */
+.footer {
+  background: #1e1823;
+}
+.footer-subtitle {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+.footer-subtitle span {
+  color: #fd9222;
+}
+
+.contact-text {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29; /* 128.571% */
+}
+.footer-soc-list {
+}
+.footer-soc-logo {
+}
+.footer-soc-link {
+}
+.footer-adress {
+}
+.footer-adress-list {
+}
+.footer-adress-item {
+}
+.footer-adress-link {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+.footer-nav {
+}
+.footer-nav-list {
+}
+.footer-nav-item {
+}
+.footer-nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.13; /* 114.286% */
+  letter-spacing: -0.02em;
+}
