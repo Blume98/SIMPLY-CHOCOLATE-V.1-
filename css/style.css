@@ -613,12 +613,12 @@ img {
 
 .loved-list {
   display: flex;
-  text-align: center;
   gap: 28px;
   margin-bottom: 50px;
 }
 
 .loved-item {
+  padding: 56px 24px 24px 24px;
   width: calc((100% - 56px) / 3);
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -631,15 +631,19 @@ img {
 }
 
 .loved-img {
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%);
 }
 
 .loved-name {
+  text-align: center;
   color: #111;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.32;
-  margin-top: 18px; /* 133.333% */
+  margin-bottom: 24px;
 }
 
 .loved-text {
@@ -648,7 +652,6 @@ img {
   font-size: 14px;
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.02em;
-  margin: 24px;
 }
 
 .loved-btn {
@@ -664,6 +667,11 @@ img {
   border: 1px solid #fd9222;
   padding: 14px 40px;
   background-color: transparent;
+}
+
+.loved-btn:active {
+  background: #fd9222;
+  color: #fff;
 }
 
 /* ----------------------------- */
