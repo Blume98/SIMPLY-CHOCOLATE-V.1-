@@ -28,6 +28,7 @@ ul {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 address {
@@ -37,6 +38,36 @@ address {
 img {
   display: block;
 }
+
+.svg-soc {
+  fill: transparent;
+  stroke: white;
+}
+
+.svg-soc:hover,
+.svg-header:hover {
+  stroke: rgb(253, 146, 34);
+}
+
+.hero-link-down div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-left: 14px;
+}
+
+/* .svg-hero { */
+/* display: flex; */
+/* justify-content: center; */
+/* border-radius: 50%; */
+/* border-color: white; */
+/* background-color: white; */
+/* margin-left: 14px; */
+/* } */
 
 .container {
   width: 100%;
@@ -136,6 +167,12 @@ img {
   gap: 14px;
 }
 
+.svg-header {
+  fill: transparent;
+  stroke: #111;
+  display: flex;
+}
+
 .soc-header-item {
 }
 
@@ -158,6 +195,15 @@ img {
   border-radius: 30px;
   padding: 381px 40px 40px 40px;
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0),
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(/images/Hero/chocolate_main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -189,6 +235,12 @@ img {
   border: none;
 }
 
+/* .hero-button-buy:hover, */
+.hero-button-buy:active {
+  background: #fcf1e0;
+  color: rgb(253, 146, 34);
+}
+
 .hero-link-nav {
   color: #fff;
   font-size: 14px;
@@ -200,8 +252,14 @@ img {
   margin-left: 14px;
   background-color: transparent;
 }
+.hero-link-nav:active {
+  border: 1px solid #fd9222;
+  color: #fd9222;
+}
 
 .hero-link-down {
+  display: flex;
+  align-items: center;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -228,6 +286,33 @@ img {
 
 .features-item {
   width: calc((100% - 88px * 2) / 3);
+  position: relative;
+}
+
+.features-item:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 124px;
+  right: -44px;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.svg-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  margin-bottom: 19px;
+}
+
+.svg-features svg {
 }
 
 .features-title {
@@ -355,10 +440,23 @@ img {
 }
 
 .made-item {
+  display: flex;
   color: #111;
   font-size: 14px;
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.02em;
+}
+
+.made-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgb(236, 237, 237);
+  background: rgb(76, 76, 76);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+  margin-right: 8px;
 }
 
 .made-item:not(:last-child) {
@@ -439,7 +537,10 @@ img {
 }
 
 .img-container {
-  text-align: center;
+}
+
+.img-container:hover .hover-container-sellers {
+  transform: translateY(0%);
 }
 
 .sellers-title {
@@ -447,10 +548,41 @@ img {
   margin-bottom: 50px;
 }
 
+.container-img-sellers {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-container-sellers {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  top: 0;
+  border-radius: 15px 15px 0px 0px;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(
+    161.15deg,
+    rgba(253, 253, 255, 0.1) 1.868%,
+    rgba(8, 2, 21, 0) 110.929%
+  );
+  height: 100%;
+  transform: translateY(100%);
+  transition-duration: 300ms;
+}
+
+.hover-sellers-text {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
 .sellers-img {
 }
 
 .sellers-subtitle {
+  text-align: center;
   color: #111;
   font-size: 18px;
   font-weight: 600;
@@ -476,7 +608,7 @@ img {
 
 .loved-title {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 91px;
 }
 
 .loved-list {
@@ -492,6 +624,10 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+  position: relative;
+}
+
+.img-name {
 }
 
 .loved-img {
@@ -500,7 +636,6 @@ img {
 
 .loved-name {
   color: #111;
-  text-align: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.32;
@@ -517,13 +652,14 @@ img {
 }
 
 .loved-btn {
+  display: block;
+  margin: 0 auto;
   color: #111;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  bottom: 14px 40px;
   border-radius: 100px;
   border: 1px solid #fd9222;
   padding: 14px 40px;
@@ -535,6 +671,26 @@ img {
 
 .footer {
   background: #1e1823;
+  display: block;
+  padding: 50px 32px;
+}
+
+.up-footer,
+.bt-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up-footer {
+  padding-bottom: 50px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.soc-right-box {
+  display: flex;
+  gap: 50px;
 }
 
 .footer-subtitle {
@@ -543,6 +699,7 @@ img {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.02em;
+  max-width: 300px;
 }
 
 .footer-subtitle span {
@@ -551,13 +708,19 @@ img {
 
 .contact-text {
   color: #fff;
-  text-align: center;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.29; /* 128.571% */
+  line-height: 1.29;
+  margin-bottom: 14px; /* 128.571% */
+}
+
+.footer-social-networks {
 }
 
 .footer-soc-list {
+  display: flex;
+  margin-top: 14px;
+  gap: 14px;
 }
 
 .footer-soc-logo {
@@ -566,10 +729,16 @@ img {
 .footer-soc-link {
 }
 
+.contact-container {
+}
+
 .footer-adress {
 }
 
 .footer-adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .footer-adress-item {
@@ -588,6 +757,8 @@ img {
 }
 
 .footer-nav-list {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-nav-item {
@@ -599,4 +770,24 @@ img {
   font-weight: 500;
   line-height: 1.13; /* 114.286% */
   letter-spacing: -0.02em;
+}
+
+.input-mail {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  width: 313px;
+  height: 52px;
+  background-color: transparent;
+  margin-right: 8px;
+}
+
+.button-subs {
+  border-radius: 100px;
+  background-color: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  width: 137px;
+  height: 52px;
 }
