@@ -29,6 +29,7 @@ ul {
 button {
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 address {
@@ -539,8 +540,15 @@ img {
 .img-container {
 }
 
+.img-container:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .img-container:hover .hover-container-sellers {
   transform: translateY(0%);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .sellers-title {
@@ -679,26 +687,18 @@ img {
 
 .footer {
   background: #1e1823;
-  display: block;
-  padding: 50px 32px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.up-footer,
-.bt-footer {
+.up-footer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .up-footer {
   padding-bottom: 50px;
   margin-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.soc-right-box {
-  display: flex;
-  gap: 50px;
 }
 
 .footer-subtitle {
@@ -708,6 +708,7 @@ img {
   line-height: 1.21;
   letter-spacing: -0.02em;
   max-width: 300px;
+  margin-right: auto;
 }
 
 .footer-subtitle span {
@@ -719,15 +720,16 @@ img {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
-  margin-bottom: 14px; /* 128.571% */
+  margin-bottom: 14px;
 }
 
 .footer-social-networks {
+  margin-right: 50px;
 }
 
 .footer-soc-list {
   display: flex;
-  margin-top: 14px;
+  /* margin-top: 14px; */
   gap: 14px;
 }
 
@@ -744,12 +746,13 @@ img {
 }
 
 .footer-adress-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 4px; */
 }
 
-.footer-adress-item {
+.footer-adress-item + .footer-adress-item {
+  margin-top: 4px;
 }
 
 .footer-adress-link {
@@ -757,8 +760,14 @@ img {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.29; /* 128.571% */
+  line-height: 1.29;
   letter-spacing: -0.02em;
+}
+
+.bt-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-nav {
@@ -783,19 +792,26 @@ img {
 .input-mail {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  padding: 13px 24px;
+  padding: 0px 24px;
   width: 313px;
   height: 52px;
   background-color: transparent;
   margin-right: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.02;
 }
 
 .button-subs {
+  font-family: inherit;
   border-radius: 100px;
   background-color: #fd9222;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  width: 137px;
   height: 52px;
+  line-height: normal;
+  padding-left: 40px;
+  padding-right: 40px;
 }
